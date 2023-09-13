@@ -26,11 +26,11 @@ def my_endpoint():
     #Get current UTC time with validation 
     utc_time = get_current_utc_time()
 
-    if current_utc_time:
+    if utc_time:
         result = {
             "slack_name": slack_name,
-            "day_of_the_week": current_day_of_week,
-            "current_utc_time": current_utc_time,
+            "day_of_the_week": current_day,
+            "current_utc_time": utc_time,
             "track": track,
             "file_url": file_url,
             "source_code_url": source_code_url
